@@ -8,9 +8,9 @@ Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& arr) {
 
     if (arrCapacity == 0)
     {
-        returnObj.average = NAN;
-        returnObj.max = NAN;
-        returnObj.min = NAN;
+        returnObj.average = nanf("");
+        returnObj.max = nanf("");
+        returnObj.min = nanf("");
     }
     else
     {
