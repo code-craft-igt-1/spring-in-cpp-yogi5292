@@ -1,6 +1,7 @@
 #include "stats.h"
+#include "stdafx.h"
 
-#include "gtest/gtest.h"
+#include "gtest\gtest.h"
 #include <cmath>
 
 TEST(Statistics, ReportsAverageMinMax) {
@@ -17,5 +18,7 @@ TEST(Statistics, AverageNaNForEmpty) {
     //NAN (not-a-number), as defined in math.h
     
     //Design the gtest EXPECT statement here.
-    //Use http://www.cplusplus.com/reference/cmath/isnan/
+    EXPECT_TRUE(isnan(computedStats.average));
+    EXPECT_TRUE(isnan(computedStats.max));
+    EXPECT_TRUE(isnan(computedStats.min));
 }
