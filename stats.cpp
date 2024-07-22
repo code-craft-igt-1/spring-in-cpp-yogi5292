@@ -1,9 +1,10 @@
 #include "stats.h"
+#include <cfloat>
 
 Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& arr) {
     //Implement statistics here
     Statistics::Stats returnObj;
-    size_t arrCapacity = arr.capacity();
+    std::size_t arrCapacity = arr.capacity();
 
     if (arrCapacity == 0)
     {
