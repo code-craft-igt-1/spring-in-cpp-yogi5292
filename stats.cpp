@@ -1,5 +1,6 @@
 #include "stats.h"
 #include <cfloat>
+#include <cmath>
 
 Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& arr) {
     //Implement statistics here
